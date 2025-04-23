@@ -14,7 +14,7 @@ import Certifications from './Pages/Certifications';
 function App() {
     return (
         <div style={{ display: 'flex' }}>
-            <BrowserRouter>
+            <BrowserRouter basename="/portfolio"> {/* ✅ Added basename */}
                 <div className='pc-navbaar'>
                     <NavBar />
                 </div>
@@ -31,8 +31,7 @@ function App() {
                         <Route path="/education" element={<Education />} />
                         <Route path="/skills" element={<Skills />} />
                         <Route path="/certifications" element={<Certifications />} />
-                                            
-                </Routes>
+                    </Routes>
                 </div>
             </BrowserRouter>
         </div>
