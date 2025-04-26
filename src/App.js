@@ -14,7 +14,7 @@ import Certifications from './Pages/Certifications';
 function App() {
     return (
         <div style={{ display: 'flex' }}>
-            <BrowserRouter basename="/portfolio"> {/* ✅ Added basename */}
+            <BrowserRouter basename="/portfolio">
                 <div className='pc-navbaar'>
                     <NavBar />
                 </div>
