@@ -57,34 +57,37 @@ const getAnimation = (companyName) => {
 const Experience = () => {
   return (
     <div className='experience-container'>
-      <div className='company-history'>
-        {experienceList.map((company, index) => (
-          <motion.div
-            key={index}
-            className='company-card'
-            initial={getAnimation(company.name).initial}
-            animate={getAnimation(company.name).animate}
-            transition={getAnimation(company.name).transition}
-          >
-            <div className='company-info'>
-              <h2>{company.name}</h2>
-              <p>{company.designation} | {company.location}</p>
-              <p>{company.startDate} – {company.endDate || 'Present'}</p>
-            </div>
-            <div className='tech-stack'>
-              {techIcons[company.name]?.map((Icon, i) => (
-                <Icon key={i} className='tech-icon' />
-              ))}
-              {(!techIcons[company.name] || techIcons[company.name].length === 0) && (
-                <div className='skill-tags'>
-                  {company.skills.map((skill, i) => (
-                    <span key={i} className='skill-tag'>{skill}</span>
-                  ))}
-                </div>
-              )}
-            </div>
-          </motion.div>
-        ))}
+      <div className='experience-wrapper'>
+        <div className='company-history'>
+          {experienceList.map((company, index) => (
+            <motion.div
+              key={index}
+              className='company-card'
+              initial={getAnimation(company.name).initial}
+              animate={getAnimation(company.name).animate}
+              transition={getAnimation(company.name).transition}
+            >
+              <div className='company-info'>
+                <h2>{company.name}</h2>
+                <p>{company.designation} | {company.location}</p>
+                <p>{company.startDate} – {company.endDate || 'Present'}</p>
+              </div>
+              <div className='tech-stack'>
+                {techIcons[company.name]?.length ? (
+                  techIcons[company.name].map((Icon, i) => (
+                    <Icon key={i} className='tech-icon' />
+                  ))
+                ) : (
+                  <div className='skill-tags'>
+                    {company.skills.map((skill, i) => (
+                      <span key={i} className='skill-tag'>{skill}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );

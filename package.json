@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "author": "Sruthi",
-  "homepage": "https://sruthi745.github.io/portfolio",
+  "homepage": "https://sruthi745.github.io/Portfolio",
   "description": "My personal portfolio built with React.",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

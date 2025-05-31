@@ -1,47 +1,53 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../Styles/Skills.css";
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaReact, FaAngular, FaNodeJs, FaJava, FaPython, FaAws, FaServer } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiSpringboot, SiMongodb, SiPostgresql, SiMysql, SiOracle } from "react-icons/si";
+import {
+  FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaReact, FaAngular,
+  FaNodeJs, FaJava, FaPython, FaAws, FaServer
+} from "react-icons/fa";
+import {
+  SiTypescript, SiNextdotjs, SiSpringboot, SiMongodb,
+  SiPostgresql, SiMysql, SiOracle
+} from "react-icons/si";
 
 const skillCategories = [
   {
     title: "Front-End Technologies",
-    animation: { x: -200, opacity: 0 }, 
+    animation: { x: -200, opacity: 0 },
     skills: [
-      { icon: <FaHtml5 style={{ color: "#E34F26", fontSize: "30px" }} />, name: "HTML5" },
-      { icon: <FaCss3Alt style={{ color: "#1572B6", fontSize: "30px" }} />, name: "CSS3" },
-      { icon: <FaBootstrap style={{ color: "#563D7C", fontSize: "30px" }} />, name: "Bootstrap" },
-      { icon: <FaJs style={{ color: "#F7DF1E", fontSize: "30px" }} />, name: "JavaScript" },
-      { icon: <SiTypescript style={{ color: "#007ACC", fontSize: "30px" }} />, name: "TypeScript" },
-      { icon: <FaReact style={{ color: "#61DBFB", fontSize: "30px" }} />, name: "React" },
-      { icon: <FaAngular style={{ color: "#DD0031", fontSize: "30px" }} />, name: "Angular" },
-      { icon: <SiNextdotjs style={{ color: "#000000", fontSize: "30px" }} />, name: "Next.js" }
+      { icon: <FaHtml5 style={{ color: "#E34F26" }} />, name: "HTML5" },
+      { icon: <FaCss3Alt style={{ color: "#1572B6" }} />, name: "CSS3" },
+      { icon: <FaBootstrap style={{ color: "#563D7C" }} />, name: "Bootstrap" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "JavaScript" },
+      { icon: <SiTypescript style={{ color: "#007ACC" }} />, name: "TypeScript" },
+      { icon: <FaReact style={{ color: "#61DBFB" }} />, name: "React" },
+      { icon: <FaAngular style={{ color: "#DD0031" }} />, name: "Angular" },
+      { icon: <SiNextdotjs style={{ color: "#000000" }} />, name: "Next.js" }
     ]
   },
   {
     title: "Back-End Technologies",
-    animation: { x: 200, opacity: 0 }, 
+    animation: { x: 200, opacity: 0 },
     skills: [
-      { icon: <FaJava style={{ color: "#007396", fontSize: "30px" }} />, name: "Java" },
-      { icon: <FaPython style={{ color: "#306998", fontSize: "30px" }} />, name: "Python" },
-      { icon: <SiSpringboot style={{ color: "#6DB33F", fontSize: "30px" }} />, name: "Spring Boot" },
-      { icon: <FaNodeJs style={{ color: "#8CC84B", fontSize: "30px" }} />, name: "Node.js" },
-      { icon: <FaJava style={{ color: "#007396", fontSize: "30px" }} />, name: "Spring MVC" },
-      { icon: <FaJava style={{ color: "#007396", fontSize: "30px" }} />, name: "Spring Data JPA" },
-      { icon: <FaNodeJs style={{ color: "#8CC84B", fontSize: "30px" }} />, name: "Express.js" }
+      { icon: <FaJava style={{ color: "#007396" }} />, name: "Java" },
+      { icon: <FaPython style={{ color: "#306998" }} />, name: "Python" },
+      { icon: <SiSpringboot style={{ color: "#6DB33F" }} />, name: "Spring Boot" },
+      { icon: <FaNodeJs style={{ color: "#8CC84B" }} />, name: "Node.js" },
+      { icon: <FaJava style={{ color: "#007396" }} />, name: "Spring MVC" },
+      { icon: <FaJava style={{ color: "#007396" }} />, name: "Spring Data JPA" },
+      { icon: <FaNodeJs style={{ color: "#8CC84B" }} />, name: "Express.js" }
     ]
   },
   {
     title: "Databases & Cloud",
-    animation: { x: -200, opacity: 0 }, 
+    animation: { x: -200, opacity: 0 },
     skills: [
-      { icon: <SiMongodb style={{ color: "#47A248", fontSize: "30px" }} />, name: "MongoDB" },
-      { icon: <SiPostgresql style={{ color: "#336791", fontSize: "30px" }} />, name: "PostgreSQL" },
-      { icon: <SiMysql style={{ color: "#4479A1", fontSize: "30px" }} />, name: "MySQL" },
-      { icon: <SiOracle style={{ color: "#F80000", fontSize: "30px" }} />, name: "Oracle" },
-      { icon: <FaAws style={{ color: "#FF9900", fontSize: "30px" }} />, name: "AWS" },
-      { icon: <FaServer style={{ color: "#009688", fontSize: "30px" }} />, name: "SQL" }
+      { icon: <SiMongodb style={{ color: "#47A248" }} />, name: "MongoDB" },
+      { icon: <SiPostgresql style={{ color: "#336791" }} />, name: "PostgreSQL" },
+      { icon: <SiMysql style={{ color: "#4479A1" }} />, name: "MySQL" },
+      { icon: <SiOracle style={{ color: "#F80000" }} />, name: "Oracle" },
+      { icon: <FaAws style={{ color: "#FF9900" }} />, name: "AWS" },
+      { icon: <FaServer style={{ color: "#009688" }} />, name: "SQL" }
     ]
   }
 ];
@@ -53,9 +59,9 @@ const Skills = () => {
         <motion.div
           key={index}
           className="skill-category"
-          initial={category.animation} 
-          animate={{ x: 0, opacity: 1 }} 
-          transition={{ duration: 0.8, ease: "easeOut" }} 
+          initial={category.animation}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h2>{category.title}</h2>
           <div className="skills-list">
