@@ -69,3 +69,7 @@
     grid-template-columns: 1fr;
   }
 }
+.home-right {
+  width: 100%;
+}
+

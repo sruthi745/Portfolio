@@ -10,7 +10,6 @@ function About() {
   useEffect(() => {
     const userAgent = navigator.userAgent;
 
-    
     if (userAgent.includes('Mac OS')) {
       setPhoneLink('facetime:+18577013596');
     } else if (userAgent.includes('Win')) {
@@ -26,12 +25,15 @@ function About() {
         <h1 className="text-3d slide-in-left">Sruthi Chirumamilla</h1>
         <h2 className="text-3d slide-in-right">Software Engineer</h2>
       </div>
-      <p className="about-paragraph fade-in">
-        Hello, I'm Sruthi Chirumamilla, a passionate Software Engineer with expertise in building dynamic and high-performing web applications.
-        I specialize in both frontend and backend development, and I enjoy solving complex problems with creative and scalable solutions.
-        I have experience working with modern technologies such as React, Angular, Node.js, Java, Spring Boot, and cloud platforms.
-        I am constantly learning and evolving to stay at the forefront of technology, and I love collaborating with teams to deliver great products.
-      </p>
+
+      <div className="about-wrapper">
+        <p className="about-paragraph fade-in">
+          Hello, I'm Sruthi Chirumamilla, a passionate Software Engineer with expertise in building dynamic and high-performing web applications.
+          I specialize in both frontend and backend development, and I enjoy solving complex problems with creative and scalable solutions.
+          I have experience working with modern technologies such as React, Angular, Node.js, Java, Spring Boot, and cloud platforms.
+          I am constantly learning and evolving to stay at the forefront of technology, and I love collaborating with teams to deliver great products.
+        </p>
+      </div>
 
       <div className="social-box">
         <div className="social-links">
@@ -51,7 +53,7 @@ function About() {
       </div>
 
       <div className="download-cv">
-        <a href="/Sruthi_Chirumamilla_Resume.pdf" download className="download-cv-btn pulse">
+        <a href="/Sruthi_Software_Engineer_Resume.pdf" download className="download-cv-btn pulse">
           Download CV
         </a>
       </div>

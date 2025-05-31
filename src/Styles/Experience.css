@@ -103,7 +103,7 @@
   transform: scale(1.1);
 }
 
-/* Mobile responsiveness */
+
 @media screen and (max-width: 768px) {
   .experience-container {
     padding: 16px;
@@ -134,3 +134,7 @@
 html, body {
   overflow-x: hidden;
 }
+.home-right {
+  width: 100%;
+}
+

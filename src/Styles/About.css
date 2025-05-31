@@ -1,10 +1,45 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
 .about-container {
   text-align: center;
-  padding: 50px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+.about-paragraph {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 20px;
+  line-height: 1.6;
+  padding: 2rem;
+  background: #e6e6e6;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff;
+  transition: all 0.3s ease-in-out;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.about-paragraph:hover {
+  transform: translateY(-10px);
+  box-shadow: 0.6rem 0.6rem 1.2rem #c8d0e7, -0.4rem -0.4rem 0.8rem #ffffff;
 }
 
 
@@ -62,7 +97,6 @@
   }
 }
 
-
 .slide-in-left {
   animation: slideInLeft 1s ease-out;
 }
@@ -83,6 +117,7 @@
   animation: pulse 1.5s infinite;
 }
 
+
 .text-3d {
   font-size: 2.5rem;
   font-weight: bold;
@@ -100,23 +135,6 @@
   font-size: 1.5rem;
   color: #666;
   text-shadow: 2px 2px 4px #c8d0e7, -2px -2px 4px #ffffff;
-}
-
-.about-paragraph {
-  font-size: 1rem;
-  color: #444;
-  margin-top: 20px;
-  line-height: 1.6;
-  padding: 2rem;
-  background: #e6e6e6;
-  border-radius: 1rem;
-  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff;
-  transition: all 0.3s ease-in-out;
-}
-
-.about-paragraph:hover {
-  transform: translateY(-10px);
-  box-shadow: 0.6rem 0.6rem 1.2rem #c8d0e7, -0.4rem -0.4rem 0.8rem #ffffff;
 }
 
 
@@ -157,6 +175,7 @@
   transform: translateY(-5px) scale(1.2);
 }
 
+
 .download-cv {
   margin-top: 60px;
 }
@@ -176,4 +195,39 @@
   background-color: #45a049;
   transform: translateY(-5px);
   box-shadow: 0.6rem 0.6rem 1.2rem #c8d0e7, -0.4rem -0.4rem 0.8rem #ffffff;
+}
+
+
+@media screen and (max-width: 480px) {
+  .about-paragraph {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .text-3d {
+    font-size: 1.8rem;
+  }
+
+  .about-header h2 {
+    font-size: 1rem;
+  }
+
+  .download-cv-btn {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+}
+
+
+.home-right {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .home-right {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
