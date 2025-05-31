@@ -53,7 +53,7 @@ function About() {
       </div>
 
       <div className="download-cv">
-        <a href="${process.env.PUBLIC_URL}/Sruthi_Software_Engineer_Resume.pdf" download className="download-cv-btn pulse">
+        <a href="/Portfolio/Sruthi_Software_Engineer_Resume.pdf" download className="download-cv-btn pulse">
           Download CV
         </a>
       </div>
