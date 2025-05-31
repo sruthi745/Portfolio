@@ -5,7 +5,9 @@
   padding: 20px 40px;
   width: 100%;
   max-width: 1400px;
+  margin: 0 auto;  
   box-sizing: border-box;
+  align-items: center;  
 }
 
 .skill-category {
