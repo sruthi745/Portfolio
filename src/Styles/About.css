@@ -175,29 +175,6 @@ html, body {
   transform: translateY(-5px) scale(1.2);
 }
 
-
-.download-cv {
-  margin-top: 60px;
-}
-
-.download-cv-btn {
-  font-size: 1rem;
-  padding: 10px 15px;
-  background-color: #4CAF50;
-  color: white;
-  text-decoration: none;
-  border-radius: 1rem;
-  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff;
-  transition: all 0.3s ease;
-}
-
-.download-cv-btn:hover {
-  background-color: #45a049;
-  transform: translateY(-5px);
-  box-shadow: 0.6rem 0.6rem 1.2rem #c8d0e7, -0.4rem -0.4rem 0.8rem #ffffff;
-}
-
-
 @media screen and (max-width: 480px) {
   .about-paragraph {
     padding: 1.2rem;
@@ -210,11 +187,6 @@ html, body {
 
   .about-header h2 {
     font-size: 1rem;
-  }
-
-  .download-cv-btn {
-    font-size: 0.95rem;
-    padding: 8px 12px;
   }
 }
 

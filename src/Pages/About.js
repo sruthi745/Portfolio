@@ -51,16 +51,6 @@ function About() {
           </a>
         </div>
       </div>
-
-      <div className="download-cv">
-        <a
-  href="Sruthi_Software_Engineer_Resume.pdf"
-  download
-  className="download-cv-btn pulse"
->
-  Download CV
-</a>
-      </div>
     </div>
   );
 }
